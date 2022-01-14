@@ -5,7 +5,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Exercicio01();
+        //Exercicio01();
         //Exercicio02();
         //Exercicio03();
         //Exercicio04();
