@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecapitulandoLogicaDeProgra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosPropostos_parte1", "ExerciciosPropostos_parte1\ExerciciosPropostos_parte1.csproj", "{FA185E86-A495-408B-B122-7C618F5ECB5E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teste", "teste", "{7E8B3913-4872-4917-B439-B65065498D7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BC02FBFB-91B3-4A9B-B131-F86F85C3F6A1} = {918DF896-452A-4681-8674-AE5F498F2801}
 		{4F17B32E-32AD-4AF5-BC4E-0C0D0FD5FDB8} = {918DF896-452A-4681-8674-AE5F498F2801}
+		{FA185E86-A495-408B-B122-7C618F5ECB5E} = {918DF896-452A-4681-8674-AE5F498F2801}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7AC2A5F-E82E-4DDA-B6D7-4B2D8A46FA41}
