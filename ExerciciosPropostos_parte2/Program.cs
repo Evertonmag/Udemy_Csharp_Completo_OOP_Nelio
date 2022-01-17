@@ -15,12 +15,11 @@ internal class Program
         //Exercicio08();
     }
 
+    /// <summary>
+    /// Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não
+    /// </summary>
     static void Exercicio01()
     {
-        /*
-        Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não
-        */
-
         Console.WriteLine("Informe um numero inteiro: ");
         int num = int.Parse(Console.ReadLine());
 
@@ -29,12 +28,12 @@ internal class Program
         else
             Console.WriteLine($"O numero {num} é Negativo");
     }
+
+    /// <summary>
+    /// Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar
+    /// </summary>
     static void Exercicio02()
     {
-        /*
-        Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar
-        */
-
         Console.WriteLine("Informe um numero inteiro: ");
         int num = int.Parse(Console.ReadLine());
 
@@ -43,15 +42,15 @@ internal class Program
         else
             Console.WriteLine($"O numero {num} é impar");
     }
+
+    /// <summary>
+    /// Leia 2 valores inteiros(A e B). Após, o programa deve mostrar uma mensagem
+    /// "Sao Multiplos" ou "Nao sao Multiplos",
+    /// indicando se os valores lidos são múltiplos entre si.<br/>
+    /// Atenção: os números devem poder ser digitados em ordem crescente ou decrescente.
+    /// </summary>
     static void Exercicio03()
     {
-        /*
-        Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem
-        "Sao Multiplos" ou "Nao sao Multiplos",
-        indicando se os valores lidos são múltiplos entre si.
-        Atenção: os números devem poder ser digitados em ordem crescente ou decrescente.
-        */
-
         Console.WriteLine("Informe um numero inteiro: ");
         int A = int.Parse(Console.ReadLine());
         Console.WriteLine("Informe outro numero inteiro: ");
@@ -62,15 +61,15 @@ internal class Program
         else
             Console.WriteLine($"Os numeros {A} e {B}. Não são Multiplos");
     }
+
+    /// <summary>
+    /// Leia a hora inicial e a hora final de um jogo.<br/>
+    /// A seguir calcule a duração do jogo,
+    /// sabendo que o mesmo pode começar em um dia e terminar em outro,
+    /// tendo uma duração mínima de 1 hora e máxima de 24 horas.<br/>
+    /// </summary>
     static void Exercicio04()
     {
-        /*
-        Leia a hora inicial e a hora final de um jogo.
-        A seguir calcule a duração do jogo,
-        sabendo que o mesmo pode começar em um dia e terminar em outro,
-        tendo uma duração mínima de 1 hora e máxima de 24 horas.
-        */
-
         Console.WriteLine("Informe a hora inicial (somente hora): ");
         int horaini = int.Parse(Console.ReadLine());
         Console.WriteLine("Informe a hora final (somente hora): ");
@@ -85,23 +84,25 @@ internal class Program
 
         Console.WriteLine($"O jogo durou {tempoJogo} Hora(s)");
     }
+
+    /// <summary>
+    /// Com base na tabela abaixo,
+    /// escreva um programa que leia o código de um item e a quantidade deste item.<br/>
+    /// A seguir, calcule e mostre o valor da conta a pagar.<br/>
+    /// <code>
+    /// ____________________________________________
+    /// |Codigo      | Especificacao     | Preço   |
+    /// |------------------------------------------|
+    /// |1           | Cachorro-quente   | R$ 4,00 |
+    /// |2           | X-salada          | R$ 4,50 |
+    /// |3           | X-Bacom           | R$ 5,00 |
+    /// |4           | Torrada simples   | R$ 2,00 |
+    /// |5           | Refrigerante      | R$ 1,50 |
+    /// --------------------------------------------
+    /// </code>
+    /// </summary>
     static void Exercicio05()
     {
-        /*
-        Com base na tabela abaixo,
-        escreva um programa que leia o código de um item e a quantidade deste item.
-        A seguir, calcule e mostre o valor da conta a pagar. 
-        ____________________________________________
-        |Codigo      | Especificacao     | Preço   |
-        |------------------------------------------|
-        |1           | Cachorro-quente   | R$ 4,00 |
-        |2           | X-salada          | R$ 4,50 |
-        |3           | X-Bacom           | R$ 5,00 |
-        |4           | Torrada simples   | R$ 2,00 |
-        |5           | Refrigerante      | R$ 1,50 |
-        --------------------------------------------
-        */
-
         Console.WriteLine("Informe o código e a quatidade do item (Respectivamante): ");
         string[] vet = Console.ReadLine().Split(' ');
 
@@ -134,16 +135,16 @@ internal class Program
                 break;
         }
     }
+
+    /// <summary>
+    /// Você deve fazer um programa que leia um valor qualquer
+    /// e apresente uma mensagem dizendo em qual dos seguintes intervalos
+    /// ([0,25], (25,50], (50,75], (75,100]) este valor se encontra.<br/>
+    /// Obviamente se o valor não estiver em nenhum destes intervalos,
+    /// deverá ser impressa a mensagem “Fora de intervalo”.
+    /// </summary>
     static void Exercicio06()
     {
-        /*
-        Você deve fazer um programa que leia um valor qualquer
-        e apresente uma mensagem dizendo em qual dos seguintes intervalos
-        ([0,25], (25,50], (50,75], (75,100]) este valor se encontra.
-        Obviamente se o valor não estiver em nenhum destes intervalos,
-        deverá ser impressa a mensagem “Fora de intervalo”. 
-        */
-
         Console.WriteLine("informe um valor: ");
         double num = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
@@ -158,6 +159,14 @@ internal class Program
         else
             Console.WriteLine($"O numero {num} está fora dos intervalos propostos");
     }
+
+    /// <summary>
+    /// Leia 2 valores com uma casa decimal (x e y), que devem representar as coordenadas
+    /// de um ponto em um plano.<br/>A seguir, determine qual o quadrante ao qual pertence o
+    /// ponto, ou se está sobre um dos eixos cartesianos ou na origem (x = y = 0).<br/>
+    /// Se o ponto estiver na origem, escreva a mensagem “Origem”.<br/>
+    /// Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação.
+    /// </summary>
     static void Exercicio07()
     {
         /*
@@ -201,35 +210,38 @@ internal class Program
             Console.WriteLine("Q4");
         }
     }
+
+    /// <summary>
+    /// Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos,
+    /// pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados
+    /// em benefício da população, sem qualquer desvio.A moeda deste país é o Rombus,
+    /// cujo símbolo é o R$. Leia um valor com duas casas decimais,
+    /// equivalente ao salário de uma pessoa de Lisarb.<br/>
+    /// <br/>
+    /// Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda,
+    /// segundo a tabela abaixo.<br/>
+    /// <br/>
+    /// <code>
+    /// ___________________________________________________
+    /// |            Renda             | Imposto de Renda |
+    /// |------------------------------|------------------|
+    /// |de 0,00 a R$ 2000,00          |       Isento     |
+    /// |de R$ 2000,01 até R$ 3000,00  |         8%       |
+    /// |de R$ 3000,01 até R$ 4500,00  |        18%       |
+    /// |Acima de R$ 4500,00           |        28%       |
+    /// ---------------------------------------------------
+    /// </code>
+    /// <br/>
+    /// Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00,
+    /// pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda.
+    /// No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00,
+    /// o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais.
+    /// </summary>
     static void Exercicio08()
     {
-        /*
-        Em um país imaginário denominado Lisarb, todos os habitantes ficam felizes em pagar seus impostos,
-        pois sabem que nele não existem políticos corruptos e os recursos arrecadados são utilizados
-        em benefício da população, sem qualquer desvio. A moeda deste país é o Rombus,
-        cujo símbolo é o R$. Leia um valor com duas casas decimais,
-        equivalente ao salário de uma pessoa de Lisarb.
-        
-        Em seguida, calcule e mostre o valor que esta pessoa deve pagar de Imposto de Renda,
-        segundo a tabela abaixo.
-
-        ___________________________________________________
-        |            Renda             | Imposto de Renda |
-        |de 0,00 a R$ 2000,00          |       Isento     |
-        |de R$ 2000,01 até R$ 3000,00  |         8%       |
-        |de R$ 3000,01 até R$ 4500,00  |        18%       |
-        |Acima de R$ 4500,00           |        28%       |
-        ---------------------------------------------------
-
-        Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00,
-        pois a faixa de salário que fica de R$ 0.00 até R$ 2000.00 é isenta de Imposto de Renda.
-        No exemplo fornecido (abaixo), a taxa é de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00,
-        o que resulta em R$ 80.36 no total. O valor deve ser impresso com duas casas decimais.
-        */
-
         Console.WriteLine("Informe com a cultura Brasileira (, = separador)" +
             "\nInforme o seu salario: ");
-        double salario = double.Parse(Console.ReadLine());
+        double salario = double.Parse(Console.ReadLine() ?? throw new ArgumentNullException());
 
         double imposto = 0.00;
 
