@@ -13,7 +13,7 @@ internal class Program
         //Time_Span();
         //PropriedadesOperacoesDateTime();
         //PropriedadesOperacoesTimeSpan();
-        DateTimeKind_ISO8601();
+        //DateTimeKind_ISO8601();
     }
 
     static void SwitchCaseXIfElseIf()
